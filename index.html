@@ -4,59 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Apple Calculator Web</title>
+    <title>Basic Calculator</title>
     <!-- project styles -->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/calculator.css">
-    
-    <!-- font-awesome -->
+    <link rel="stylesheet" href="/css/block/header.css">
+    <link rel="stylesheet" href="/css/block/calculator.css">
+    <link rel="stylesheet" href="/css/block/footer.css">
+
+    <!-- font-awesome style -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   </head>
 
   <body>
-    <header class="header">
-      <h1 class="header-title"></h1>
+    <header id="container" class="header">
+      <div class="header-wrapp">
+        <h1 class="header-title"></i>Calculadora Online</h1>
+        <i class="fab fa-apple header-icon"></i>
+      </div>
     </header>
     
-    <section class="calculator">
-      <div class="calculator-screen">
-        0
-      </div>
-      <div class="calculator-buttons">
-        <div class="calculator-buttons-row">
-          <button class="calculator-button calculator-button-special double ">AC</button>
-          <button class="calculator-button calculator-button-special"><i class="fa fa-arrow-left" aria-hidden="false"></i></button>
-          <button class="calculator-button"><i class="fas fa-divide" aria-hidden="false"></i></button>
+    <section id="container">
+      <div class="calculator">
+        <div class="calculator-screen">
+          0
         </div>
-        <div class="calculator-buttons-row">
-          <button class="calculator-button">7</button>
-          <button class="calculator-button">8</button>
-          <button class="calculator-button">9</button>
-          <button class="calculator-button">X</i></button>
-        </div>
-        <div class="calculator-buttons-row">
-          <button class="calculator-button">4</button>
-          <button class="calculator-button">5</button>
-          <button class="calculator-button">6</button>
-          <button class="calculator-button">-</button>
-        </div>
-        <div class="calculator-buttons-row">
-          <button class="calculator-button">1</button>
-          <button class="calculator-button">2</button>
-          <button class="calculator-button">3</button>
-          <button class="calculator-button">+</button>
-        </div>
-        <div class="calculator-buttons-row">
-          <button class="calculator-button triple">0</button>
-          <button class="calculator-button">=</button>
+        <div class="calculator-buttons">
+          <div class="calculator-buttons-row">
+            <button class="calculator-button calculator-button-special double ">AC</button>
+            <button class="calculator-button calculator-button-special">←</button>
+            <button class="calculator-button">÷</button>
+          </div>
+          <div class="calculator-buttons-row">
+            <button class="calculator-button">7</button>
+            <button class="calculator-button">8</button>
+            <button class="calculator-button">9</button>
+            <button class="calculator-button">x</i></button>
+          </div>
+          <div class="calculator-buttons-row">
+            <button class="calculator-button">4</button>
+            <button class="calculator-button">5</button>
+            <button class="calculator-button">6</button>
+            <button class="calculator-button">-</button>
+          </div>
+          <div class="calculator-buttons-row">
+            <button class="calculator-button">1</button>
+            <button class="calculator-button">2</button>
+            <button class="calculator-button">3</button>
+            <button class="calculator-button">+</button>
+          </div>
+          <div class="calculator-buttons-row">
+            <button class="calculator-button triple">0</button>
+            <button class="calculator-button">=</button>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <span class="footer-message"></span>
+    <footer id="container" class="footer">
+      <div class="footer-wrapp">
+        <span class="footer-message">Thanks!</span>
+      </div>
     </footer>
-
+  
+  <script src="./javascript/block/calculator.js"></script>
   </body>
 </html>

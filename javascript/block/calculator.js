@@ -1,6 +1,5 @@
-
 let total = 0;
-let buffer = "0"; 
+let buffer = "0";
 let lastOperator = null;
 
 const calculatorsScreen = document.querySelector('.calculator-screen');
@@ -12,7 +11,7 @@ const init = () =>{
 }
 
 const buttonClick = (value) => {
-  intValue = parseInt(value)
+  let intValue = parseInt(value)
   if(isNaN(intValue)){
     manipulateSymbol(value)
   }
@@ -32,32 +31,31 @@ const manipulateNumber = (number) => {
 }
 
 const manipulateSymbol = (symbol)=> {
-    if (symbol == 'AC'){
-      buffer="0";
-      total=0;
-      lastOperator = null;
+  if(symbol == 'AC'){
+    buffer="0";
+    total=0;
+    lastOperator = null;
+  }
+  else if(symbol == '='){
+    if(lastOperator === null){
+      return;
     }
-    else if(symbol == '='){
-      if(lastOperator === null){ /* nothing to do*/
-        return;
-      }
-      flushScreenOperation(parseInt(buffer));
-      lastOperator = null;
-      buffer = "" + total;
-      total = 0;
-      break;
-    }
-    else if(symbol == '←'){
-      if(buffer.length == 1){
-        buffer = "0";
-      }
-      else{
-        buffer = buffer.substring(0,buffer.length - 1);
-      }
+    flushScreenOperation(parseInt(buffer));
+    lastOperator = null;
+    buffer = "" + total;
+    total = 0;
+  }
+  else if(symbol == '←'){
+    if(buffer.length == 1){
+      buffer = "0";
     }
     else{
-      manipulateMath(symbol)
+      buffer = buffer.substring(0,buffer.length - 1);
     }
+  }
+  else{
+    manipulateMath(symbol);
+  }
 }
 
 const manipulateMath = (number) => {
@@ -80,7 +78,7 @@ const flushScreenOperation = (intBuffer) => {
     total -= intBuffer;
   }
   else if(lastOperator === "x"){
-    total -= intBuffer;
+    total *= intBuffer;
   }else{
     total /= intBuffer
   }

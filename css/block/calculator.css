@@ -1,15 +1,17 @@
 
 .calculator{
   font-family: Helvetica, Arial, sans-serif;
-  width: 400px;
+  margin: 50px auto;
+  width: 350px;
   background-color: #000;
   color:#fff;
+  border:10px dotted rgba(14, 13, 13,0.02);
 }
 
 .calculator-screen{
   font-size: 40px;
   text-align: right;
-  padding: 20px 5px;
+  padding: 20px 10px;
 }
 
 .calculator-buttons-row{

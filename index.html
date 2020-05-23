@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/calculator.css">
-  <title>Apple Calculator Web</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/calculator.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <title>Apple Calculator Web</title>
+  </head>
+
   <body>
     <header class="header">
       <h1 class="header-title"></h1>
@@ -13,31 +19,35 @@
     
     <section class="calculator">
       <div class="calculator-screen">
+        0
       </div>
       <div class="calculator-buttons">
         <div class="calculator-buttons-row">
-          <button class="calculator-button"></button>
-          <button class="calculator-button"></button>
-          <button class="calculator-button"></button>
-          <button class="calculator-button"></button>
+          <button class="calculator-button double">C</button>
+          <button class="calculator-button"><i class="fa fa-arrow-left" aria-hidden="false"></i></button>
+          <button class="calculator-button"><i class="fas fa-divide" aria-hidden="false"></i></button>
         </div>
         <div class="calculator-buttons-row">
-          <button class="calculator-button"></button>
-          <button class="calculator-button"></button>
-          <button class="calculator-button"></button>
-          <button class="calculator-button"></button>
+          <button class="calculator-button">7</button>
+          <button class="calculator-button">8</button>
+          <button class="calculator-button">9</button>
+          <button class="calculator-button"><strong>X</strong></i></button>
         </div>
         <div class="calculator-buttons-row">
-          <button class="calculator-button"></button>
-          <button class="calculator-button"></button>
-          <button class="calculator-button"></button>
-          <button class="calculator-button"></button>
+          <button class="calculator-button">4</button>
+          <button class="calculator-button">5</button>
+          <button class="calculator-button">6</button>
+          <button class="calculator-button"><strong>-</strong></button>
         </div>
         <div class="calculator-buttons-row">
-          <button class="calculator-button"></button>
-          <button class="calculator-button"></button>
-          <button class="calculator-button"></button>
-          <button class="calculator-button"></button>
+          <button class="calculator-button">1</button>
+          <button class="calculator-button">2</button>
+          <button class="calculator-button">3</button>
+          <button class="calculator-button"><strong>+</strong></button>
+        </div>
+        <div class="calculator-buttons-row">
+          <button class="calculator-button triple">0</button>
+          <button class="calculator-button"><strong>=</strong></button>
         </div>
       </div>
     </section>
@@ -45,7 +55,6 @@
     <footer class="footer">
       <span class="footer-message"></span>
     </footer>
-    
-    <script src="/javascript/index.js"></script>
+
   </body>
 </html>

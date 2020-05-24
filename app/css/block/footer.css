@@ -1,0 +1,15 @@
+.footer{
+  margin-top: 8px;
+  background-color: #1d1d1f;
+}
+
+.footer-wrapp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-message{
+  font-size: 30px;
+  color: #f5f5f7;
+}

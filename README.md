@@ -37,6 +37,11 @@ A project maded with HTML, CSS and pure Javascript with the intention of practic
 I learned to build this calculator online as exercise in frontendmasters web course.
 https://frontendmasters.com/
 
+## 💻 preview
+
+<h1 align="center">
+    <img alt="WEB calculator Front-end" title="#web-calculator" src=".github/web-calculator.png" />
+</h1>
 
 ## :boom: Installation
 
@@ -45,7 +50,7 @@ https://frontendmasters.com/
 $ https://github.com/LucasPereiraMiranda/web-calculator
 
 
-$ execute on browser or with live share
+$ execute on browser or with live server
 
 ```
 ---

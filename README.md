@@ -17,6 +17,10 @@
   <a href="https://github.com/LucasPereiraMiranda/web-calculator/issues">
     <img alt="Repository issues" src="https://img.shields.io/github/issues/LucasPereiraMiranda/web-calculator">
   </a>
+
+  <a href="https://github.com/LucasPereiraMiranda/web-calculator/issues">
+    <img alt="GitHub license" src="https://img.shields.io/github/license/LucasPereiraMiranda/web-calculator">
+  </a>
 </p>
 
 <br>
@@ -53,4 +57,5 @@ $ https://github.com/LucasPereiraMiranda/web-calculator
 $ execute on browser or with live server
 
 ```
+
 ---

@@ -43,7 +43,7 @@ https://frontendmasters.com/
 
 ## 💻 preview
 
-Deploy[URL](https://lucaspereiramiranda.github.io/web-calculator/)
+Deploy [URL](https://lucaspereiramiranda.github.io/web-calculator/)
 
 <h1 align="center">
     <img alt="WEB calculator Front-end" title="#web-calculator" src=".github/web-calculator.png" />

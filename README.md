@@ -1,5 +1,3 @@
-# web-calculator
-
 <h1 align="center">
   <br/>
   WEB calculator
